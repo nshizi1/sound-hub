@@ -1,0 +1,149 @@
+#companies{
+    margin-bottom: 30px;
+}
+#companies .qualities{
+    background-color: var(--black);
+    padding: 20px 5%;
+}
+#companies .qualities .cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+#companies .qualities .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#companies .qualities .cards .card i{
+    color: var(--secondary);
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: 300ms ease;
+}
+#companies .qualities .cards .card p{
+    color: var(--white);
+    font-weight: 300;
+    text-transform: capitalize;
+}
+#companies .qualities .cards .card:hover i{
+    color: var(--primary);
+}
+#companies .companies .cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 10px 5%;
+}
+#companies .companies .cards .card img{
+    width: 100%;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.title h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--primary);
+}
+.title .line{
+    width: 80px;
+    height: 5px;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+.title .square{
+    width: 15px;
+    aspect-ratio: 1;
+    background-color: var(--primary);
+    transform: rotate(45deg);
+    border-radius: 50%;
+}
+.title .shape{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+#categories .content img{
+    width: 100%;
+}
+#categories .content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    padding: 0 5%;
+}
+#categories .content .card a{
+    text-decoration: none;
+}
+#categories .content .card p{
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#categories .content .card{
+    transition: 300ms ease;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 10px;
+    overflow: hidden;
+}
+#categories .content .card:hover{
+    transform: scale(1.1);
+    box-shadow:  7px 7px 21px #afafaf,
+             -7px -7px 21px #ffffff;
+}
+#sellers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+    background-color: var(--black);
+}
+#sellers .card img{
+    width: 100%;
+}
+#sellers .card:nth-child(1){
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#sellers .card:nth-child(1) h2{
+    text-transform: capitalize;
+    color: var(--black);
+    font-size: 30px;
+}
+#sellers .card:nth-child(1) a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#sellers .card{
+    position: relative;
+}
+#sellers .card img{
+    width: 100%;
+    height: 100%;
+    transition: 300ms ease;
+    clip-path: inset(0);
+}
+#sellers .card p{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white);
+    text-transform: capitalize;
+}
+#sellers .image:hover> img{
+    clip-path: inset(20px);
+}
